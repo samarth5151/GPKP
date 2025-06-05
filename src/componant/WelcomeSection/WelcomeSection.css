@@ -1,0 +1,102 @@
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.content {
+  flex: 2.3;
+  padding-left: 80px;
+  padding-right: 40px;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #294A70;
+  font-weight: 500;
+}
+
+.content p {
+  font-size: 1.1 rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+.content ul {
+  font-size: 1.1 rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+.notice-board{
+  flex: 1;
+  padding: 0;
+  margin: 0%;
+}
+.circulars-board {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0%;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+  height: 300px;
+  width: 450px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.circulars-board .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e9f2f9;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.circulars-board .header h2 {
+  font-size: 1.2rem;
+  color: #294A70;
+  margin: 0;
+}
+
+.circulars-board .header a {
+  color: red;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.circulars-content {
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  list-style-type: disc;
+  margin-left: 20px;
+  animation: scrollUp 10s linear infinite;
+}
+
+.marquee li {
+  font-size: 1rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Scroll animation */
+@keyframes scrollUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.videos {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 250px;
+  width: 200px;
+}
