@@ -1,0 +1,122 @@
+/* AboutUs.css */
+:root {
+  --primary-blue: #004481;
+  --secondary-blue: #0066a4;
+  --text-color: #333;
+  --light-gray: #f5f5f5;
+  --border-color: #e0e0e0;
+}
+
+.about-container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 2rem;
+  animation: fadeIn 0.8s ease-in-out;
+  background-color: fafafa;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.about-heading {
+  color: var(--primary-blue);
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--primary-blue);
+  padding-bottom: 10px;
+}
+
+.about-paragraph {
+  color: var(--text-color);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.institute-heading {
+  color: var(--secondary-blue);
+  font-size: 1.6rem;
+  margin: 2rem 0 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.institute-heading:hover {
+  color: var(--primary-blue);
+}
+
+.timeline {
+  list-style-type: none;
+  padding: 0;
+}
+
+.timeline-item {
+  margin-bottom: 1.2rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--primary-blue);
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.timeline-item strong {
+  color: var(--primary-blue);
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.curriculum-section {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1.5rem;
+  }
+  
+  .about-heading {
+    font-size: 1.8rem;
+  }
+  
+  .about-paragraph {
+    font-size: 0.95rem;
+  }
+}
+
+.page-container{
+    padding: 50px 170px;
+}
+.content-container{
+}
+.content-container h1 {
+  font-size: 1.7rem;
+  color: #294A70;
+  margin-bottom: 15px;
+  
+}
+
+.content-container h2{
+  font-size: 1.7rem;
+  color: #294A70;
+  margin-bottom: 15px;
+  font-weight: 500;
+
+}
+
+.content-container p,
+.content-container ul {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  list-style: none;
+}

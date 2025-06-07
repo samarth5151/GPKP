@@ -1,0 +1,52 @@
+/* OrganizationalChart.css */
+:root {
+  --container-max-width: 1200px;
+}
+
+.org-chart-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 2rem;
+      background-color: #fafafa;
+  scroll-margin-top: 80px;
+}
+
+.org-chart-heading {
+  color: #004481;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #004481;
+  padding-bottom: 10px;
+  animation: fadeIn 0.8s ease;
+}
+
+.chart-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.org-chart-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.org-chart-image:hover {
+  transform: scale(1.02);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .org-chart-image {
+    width: 100%;
+  }
+}

@@ -1,0 +1,85 @@
+/* VisionMission.css */
+:root {
+  --primary-blue: #004481;
+  --text-color: #333;
+  --section-padding: 2rem;
+}
+
+.vision-container {
+  max-width: 1230px;
+  margin: 0 auto;
+      background-color: #fafafa;
+
+  padding: var(--section-padding);
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.vision-heading {
+  color: var(--primary-blue);
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--primary-blue);
+  padding-bottom: 10px;
+}
+
+.section-heading {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.section-heading:hover {
+  color: #0066a4;
+  cursor: pointer;
+}
+
+.vision-text {
+  color: var(--text-color);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.mission-list {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+.mission-item {
+  color: var(--text-color);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  position: relative;
+  animation: fadeIn 0.5s ease;
+}
+
+.mission-item::before {
+  content: "•";
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .vision-container {
+    padding: 1.5rem;
+  }
+  
+  .vision-heading {
+    font-size: 1.8rem;
+  }
+  
+  .mission-item {
+    font-size: 0.95rem;
+  }
+}

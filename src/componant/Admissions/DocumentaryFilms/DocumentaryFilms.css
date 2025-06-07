@@ -1,0 +1,51 @@
+.documentary-section {
+  padding: 30px;
+  text-align: center;
+}
+
+.documentary-section h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.info-banner {
+  background-color: #f9f9e7;
+  padding: 15px;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f1f6fc;
+  color: #1a5276;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.link-item:hover {
+  background-color: #d6eaf8;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
