@@ -1,0 +1,30 @@
+/* StudentsCoOpStore.css */
+
+.students-store-container {
+  padding: 40px;
+  background-color: #f8fafc;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #0c3c78;
+  margin-bottom: 30px;
+}
+
+.store-image-wrapper {
+  display: inline-block;
+  border: 4px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+.store-image-wrapper img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+}

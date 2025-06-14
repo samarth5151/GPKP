@@ -1,0 +1,133 @@
+/* Mechanical.css - Styled to match Electrical Department */
+
+.mechanical-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #2c3e50;
+}
+
+.page-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #003366;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background-color: #003366;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.tab-btn:hover {
+  background-color: #0056b3;
+}
+
+.tab-btn.active {
+  background-color: #001f4d;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.tab-content h3 {
+  margin-top: 1.5rem;
+  color: #003366;
+  font-size: 1.4rem;
+}
+
+.tab-content ul {
+  padding-left: 1.5rem;
+}
+
+.faculty-table,
+.staff-table,
+.labs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faculty-table th,
+.staff-table th,
+.labs-table th,
+.faculty-table td,
+.staff-table td,
+.labs-table td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.faculty-table th,
+.staff-table th,
+.labs-table th {
+  background-color: #003366;
+  color: white;
+  font-weight: bold;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+background-color: #1f3d7a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #218838;
+}
+
+.download-btn:hover {
+  background-color: #163069;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.download-btn:active {
+  background-color: #0e1e48;
+  transform: scale(0.98);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn:focus {
+  outline: 2px solid #88aaff;
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tab-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .faculty-table,
+  .staff-table,
+  .labs-table {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,165 @@
+/* EDPCell.css */
+:root {
+  --primary-blue: #004481;
+  --secondary-blue: #0066a4;
+  --text-color: #333;
+  --light-gray: #f5f5f5;
+  --border-color: #ddd;
+}
+
+.edp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  scroll-margin-top: 80px;
+}
+
+.breadcrumb {
+  margin-bottom: 1rem;
+  color: var(--primary-blue);
+  font-size: 0.9rem;
+}
+
+.breadcrumb span:first-child {
+  color: #666;
+}
+
+.edp-heading {
+  color: var(--primary-blue);
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--primary-blue);
+  padding-bottom: 10px;
+  animation: fadeIn 0.8s ease;
+}
+
+.edp-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  animation: fadeIn 0.8s ease;
+}
+
+.edp-table-header {
+  background-color: var(--primary-blue);
+  color: #0066a4;
+  font-weight: bold;
+}
+
+.edp-table th, .edp-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.edp-photo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.edp-subheading {
+  color: var(--secondary-blue);
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  animation: fadeIn 0.9s ease;
+}
+
+.availability-heading, .management-heading, .effectiveness-heading, .success-stories-heading {
+  color: var(--primary-blue);
+  font-size: 1.3rem;
+  margin: 2rem 0 1rem;
+  animation: fadeIn 1s ease;
+}
+
+.availability-content, .management-content, .effectiveness-content, .success-stories-content {
+  animation: fadeIn 1.1s ease;
+}
+
+.availability-list, .activity-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.management-table, .effectiveness-table, .success-stories-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  animation: fadeIn 1.2s ease;
+}
+
+.management-table th, .effectiveness-table th, .success-stories-table th {
+  background-color: var(--light-gray);
+  font-weight: bold;
+}
+
+.management-table th, .effectiveness-table th, .success-stories-table th,
+.management-table td, .effectiveness-table td, .success-stories-table td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* New sections */
+.seminar-image-container {
+  display: flex;
+  margin: 2rem 0;
+  animation: fadeIn 1.2s ease;
+}
+
+.seminar-image {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.seminar-caption {
+  flex: 1;
+  padding: 15px;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+.success-stories-intro {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .edp-container {
+    padding: 1.5rem;
+  }
+  
+  .edp-heading {
+    font-size: 1.8rem;
+  }
+  
+  .edp-table th, .edp-table td {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+  
+  .edp-photo {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .seminar-image-container {
+    flex-direction: column;
+  }
+  
+  .seminar-image {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}

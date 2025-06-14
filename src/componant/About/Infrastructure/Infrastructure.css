@@ -1,0 +1,80 @@
+/* Infrastructure.css */
+:root {
+  --primary-blue: #004481;
+  --light-gray: #f5f5f5;
+  --text-color: #333;
+}
+
+.infrastructure-container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 2rem;
+  scroll-margin-top: 80px;
+    background-color: #fafafa;
+
+  }
+
+.infrastructure-heading {
+  color: var(--primary-blue);
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-blue);
+  padding-bottom: 10px;
+  animation: fadeIn 0.8s ease;
+}
+
+.infrastructure-description {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  animation: fadeIn 0.9s ease;
+}
+
+.infrastructure-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  animation: fadeIn 1s ease;
+}
+
+.infrastructure-table th {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.infrastructure-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.infrastructure-table tr:nth-child(even) {
+  background-color: var(--light-gray);
+}
+
+.infrastructure-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .infrastructure-table {
+    font-size: 0.9rem;
+  }
+  
+  .infrastructure-table th {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .infrastructure-table td {
+    padding: 10px;
+  }
+}

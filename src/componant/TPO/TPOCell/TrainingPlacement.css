@@ -1,0 +1,138 @@
+.training-placement-portal {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.portal-header {
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #333;
+}
+
+.portal-content {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Officers Table Styles */
+.officers-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.officers-table th,
+.officers-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.officers-table th {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.photo-placeholder {
+  width: 80px;
+  height: 100px;
+  background-color: #e0e0e0;
+  display: inline-block;
+}
+
+/* Facility Section Styles */
+.facility-section {
+  background-color: #fffde7;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.facility-section h2 {
+  color: #3f51b5;
+  margin-top: 0;
+}
+
+.facility-section p {
+  line-height: 1.6;
+}
+
+/* Placement Officers Table Styles */
+.placement-officers-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.placement-officers-table th,
+.placement-officers-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.placement-officers-table th {
+  background-color: #3f51b5;
+  color: white;
+}
+
+/* Placement Data Styles */
+.placement-data-container {
+  margin-bottom: 20px;
+}
+
+.placement-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.placement-data-table th,
+.placement-data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.placement-data-table th {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.placement-data-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.total-row {
+  font-weight: bold;
+  background-color: #e3f2fd;
+}
+
+/* Recruitment Process Styles */
+.recruitment-process-section {
+  background-color: #e8f5e9;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.recruitment-process-section h2 {
+  color: #2e7d32;
+  margin-top: 0;
+}
+
+.recruitment-process-section ul {
+  padding-left: 20px;
+}
+
+.recruitment-process-section li {
+  margin-bottom: 10px;
+}

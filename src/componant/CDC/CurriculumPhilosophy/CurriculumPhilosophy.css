@@ -1,0 +1,94 @@
+/* CurriculumPhilosophy.css */
+:root {
+  --primary-blue: #004481;
+  --secondary-blue: #0066a4;
+  --text-color: #333;
+  --light-gray: #f5f5f5;
+  --border-color: #ddd;
+}
+
+.philosophy-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  scroll-margin-top: 80px;
+}
+
+.breadcrumb {
+  margin-bottom: 1rem;
+  color: var(--primary-blue);
+  font-size: 0.9rem;
+}
+
+.breadcrumb span:first-child {
+  color: #666;
+}
+
+.philosophy-heading {
+  color: var(--primary-blue);
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--primary-blue);
+  padding-bottom: 10px;
+  animation: fadeIn 0.8s ease;
+}
+
+.philosophy-text {
+  color: var(--text-color);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 0.8s ease;
+}
+
+.philosophy-quote {
+  color: var(--secondary-blue);
+  font-size: 1.1rem;
+  font-style: italic;
+  margin: 1.5rem 0;
+  animation: fadeIn 0.9s ease;
+}
+
+.philosophy-list {
+  list-style-type: none;
+  padding-left: 1rem;
+  animation: fadeIn 1s ease;
+}
+
+.philosophy-list li {
+  margin-bottom: 0.8rem;
+  color: var(--text-color);
+  line-height: 1.6;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.philosophy-list li:before {
+  content: "✓";
+  color: var(--secondary-blue);
+  position: absolute;
+  left: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .philosophy-container {
+    padding: 1.5rem;
+  }
+  
+  .philosophy-heading {
+    font-size: 1.8rem;
+  }
+  
+  .philosophy-text {
+    font-size: 0.95rem;
+  }
+  
+  .philosophy-quote {
+    font-size: 1rem;
+  }
+}

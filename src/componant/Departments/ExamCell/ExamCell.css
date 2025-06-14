@@ -1,0 +1,50 @@
+.examcell-container {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.examcell-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1a3e72;
+  margin-bottom: 20px;
+}
+
+.examcell-section {
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.examcell-section h3 {
+  color: #234f7e;
+  margin-bottom: 12px;
+}
+
+.examcell-section ul {
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+.exam-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.exam-table th,
+.exam-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.exam-table th {
+  background-color: #234f7e;
+  color: white;
+}

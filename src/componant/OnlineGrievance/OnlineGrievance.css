@@ -1,0 +1,66 @@
+/* OnlineGrievance.css */
+:root {
+  --primary-blue: #004481;
+  --text-color: #333;
+  --light-gray: #f5f5f5;
+}
+
+.online-grievance-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  scroll-margin-top: 80px;
+}
+
+.breadcrumb {
+  margin-bottom: 1rem;
+  color: var(--primary-blue);
+  font-size: 0.9rem;
+}
+
+.breadcrumb span:first-child {
+  color: #666;
+}
+
+.online-grievance-heading {
+  color: var(--primary-blue);
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  animation: fadeIn 0.8s ease;
+}
+
+.grievance-subheading {
+  color: var(--primary-blue);
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 0.9s ease;
+}
+
+.grievance-form-container {
+  background-color: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: 4px;
+  animation: fadeIn 1s ease;
+}
+
+.grievance-info {
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .online-grievance-container {
+    padding: 1.5rem;
+  }
+  
+  .online-grievance-heading {
+    font-size: 1.8rem;
+  }
+}

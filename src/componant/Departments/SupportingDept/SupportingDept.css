@@ -1,0 +1,25 @@
+.supporting-departments {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.support-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #1a3e72;
+}
+
+.support-header h1 {
+  color: #1a3e72;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.support-header p {
+  color: #555;
+  font-size: 1.1rem;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.6;
+}

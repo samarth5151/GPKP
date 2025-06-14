@@ -1,0 +1,41 @@
+.facilities-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #f9f9f9;
+}
+
+.facilities-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.facilities-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.facilities-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-content {
+  padding: 25px;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 1.4rem;
+  color: #0056b3;
+}

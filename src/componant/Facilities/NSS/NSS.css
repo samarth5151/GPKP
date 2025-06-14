@@ -1,0 +1,93 @@
+.nss-container {
+  padding: 30px 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.nss-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #003366;
+  border-bottom: 3px solid #003366;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.nss-section {
+  margin-bottom: 40px;
+  background-color: #fff;
+  padding: 25px;
+  border-left: 5px solid #0056b3;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nss-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #004080;
+}
+
+.nss-section h3 {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #006699;
+}
+
+.nss-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.nss-section ul ul {
+  list-style-type: circle;
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+.nss-event {
+  margin-top: 35px;
+  padding: 20px;
+  border: 1px solid #d1e0e0;
+  border-radius: 6px;
+  background-color: #fefefe;
+}
+
+.nss-event h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #444;
+  font-weight: 600;
+}
+
+.nss-event p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.nss-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.nss-gallery img {
+  width: calc(33% - 10px);
+  min-width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid #eee;
+  transition: transform 0.3s ease;
+}
+
+.nss-gallery img:hover {
+  transform: scale(1.04);
+  border-color: #007acc;
+}

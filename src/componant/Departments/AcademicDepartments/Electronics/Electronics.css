@@ -1,0 +1,162 @@
+/* Electronics.css */
+
+.electronics-container {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+}
+
+.page-title {
+  font-size: 28px;
+  color: #1f3d7a;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.faculty-table,
+.staff-table,
+.labs-table,
+.achievements-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  background: white;
+}
+
+.faculty-table th,
+.staff-table th,
+.labs-table th,
+.achievements-table th,
+.faculty-table td,
+.staff-table td,
+.labs-table td,
+.achievements-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.faculty-table th,
+.staff-table th,
+.labs-table th,
+.achievements-table th {
+  background-color: #234f7e;
+  color: white;
+}
+
+.hod-photo {
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.tab-btn {
+  padding: 8px 12px;
+  font-size: 13px;
+  white-space: nowrap;
+  border: none;
+  background-color: #234f7e;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  background-color: #1b3f66;
+}
+
+.tab-content {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content h3 {
+  margin-top: 0;
+  color: #234f7e;
+}
+
+.tab-content ul {
+  padding-left: 20px;
+}
+
+.tab-content ul li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Keep tabs on one line */
+.tabs.single-line {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* Download Button Styling */
+.download-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1f3d7a;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.download-btn:hover {
+  background-color: #163069;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.download-btn:active {
+  background-color: #0e1e48;
+  transform: scale(0.98);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn:focus {
+  outline: 2px solid #88aaff;
+  outline-offset: 2px;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery-item {
+  height: 160px;
+  background-color: #3c3c4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 0.9rem;
+  border-radius: 6px;
+}

@@ -1,0 +1,140 @@
+.departments-container {
+  display: flex;
+  min-height: 80vh;
+  padding: 0px 30px;
+  background: #f9f9f9;
+}
+
+.departments-sidebar {
+  width: 280px;
+  background: linear-gradient(135deg, #294A70  0%, rgb(16, 116, 158)  100%);
+  color: white;
+  padding: 30px 0;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-title {
+  padding: 0 20px 20px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.department-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.department-links > li {
+  margin-bottom: 5px;
+}
+
+.department-links a {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  position: relative;
+}
+
+.department-links a i {
+  margin-right: 10px;
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+.department-links a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffcc00;
+}
+
+.department-links a.active {
+  background: rgba(255, 204, 0, 0.2);
+  color: #ffcc00;
+  font-weight: 500;
+}
+
+.department-links a.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: #ffcc00;
+}
+
+.sub-links {
+  list-style: none;
+  padding-left: 30px;
+  margin-top: 5px;
+  display: none;
+}
+
+.department-links > li:hover .sub-links,
+.department-links > li:focus-within .sub-links {
+  display: block;
+}
+
+.sub-links a {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #d1d1d1;
+}
+
+.sub-links a:hover {
+  color: #ffcc00;
+  background: transparent;
+}
+
+.sub-links a.active {
+  color: #ffcc00;
+  font-weight: 500;
+  background: transparent;
+}
+
+.sub-links a.active::before {
+  display: none;
+}
+
+.departments-content {
+  flex: 1;
+  padding: 30px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+  .departments-container {
+    flex-direction: column;
+  }
+  
+  .departments-sidebar {
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .department-links > li {
+    margin-bottom: 0;
+  }
+  
+  .sub-links {
+    position: static;
+    display: none;
+    padding-left: 40px;
+  }
+  
+  .department-links > li:hover .sub-links {
+    display: none;
+  }
+  
+  .department-links > li.active .sub-links {
+    display: block;
+  }
+}

@@ -1,0 +1,109 @@
+/* ScienceHumanity.css */
+
+.applied-container {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+}
+
+.page-title {
+  font-size: 28px;
+  color: #1f3d7a;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: center;
+  gap: 6px;
+  margin: 20px 0;
+}
+
+.tab-btn {
+  font-size: 13px;
+  white-space: nowrap;
+  padding: 8px 12px;
+  border: none;
+  background-color: #234f7e;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  background-color: #1b3f66;
+}
+
+.tab-content {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content h3 {
+  margin-top: 0;
+  color: #234f7e;
+}
+
+.tab-content ul {
+  padding-left: 20px;
+}
+
+.tab-content ul li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.faculty-table,
+.staff-table,
+.labs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  background: white;
+}
+
+.faculty-table th,
+.staff-table th,
+.labs-table th,
+.faculty-table td,
+.staff-table td,
+.labs-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.faculty-table th,
+.staff-table th,
+.labs-table th {
+  background-color: #234f7e;
+  color: white;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery-item {
+  height: 160px;
+  background-color: #3c3c4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 0.9rem;
+  border-radius: 6px;
+}
